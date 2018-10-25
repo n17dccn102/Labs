@@ -13,21 +13,19 @@ struct Phone
 void Display(void)
 {
 	struct Phone x;
-	struct Phone y; // Phone cua ban
+	struct Phone y; 
 	y.arecode="212";
 	y.exchange="767";
 	y.number="8900";
-	do
-	{
-		cout<<"Enter your are code, exchange, and number: ";
-		cin>>x.arecode>>x.exchange>>x.number;
-		cout<<"\nMy number is: ("<<y.arecode<<") "<<y.exchange<<"-"<<y.number<<endl;
-		cout<<"\nYour number code is: ("<<x.arecode<<") "<<x.exchange<<"-"<<x.number<<endl;
-	}while(true);
+	cout<<"Enter your are code, exchange, and number: ";
+	cin>>x.arecode>>x.exchange>>x.number;
+	cout<<"\nMy number is: ("<<y.arecode<<") "<<y.exchange<<"-"<<y.number<<endl;
+	cout<<"\nYour number code is: ("<<x.arecode<<") "<<x.exchange<<"-"<<x.number<<endl;
 }
 
 int main()
 {
 	Display();
+	system("pause");
 	return 0;
 }
